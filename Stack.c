@@ -13,7 +13,7 @@ NodeAddress pop(NodeAddress tail, NodeAddress root)
     NodeAddress current = root;
     while (current != tail && current)
     {
-        previous = current; // trailing pointer that ends up 1 position behind the previous tail
+        previous = current; 
         current = current->next;
     }
     printf("%d\n", tail->data); 
